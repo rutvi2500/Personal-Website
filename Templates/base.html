@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : StampALike  
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20120528
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Rutvi Patel</title>
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Coda:400,800" rel="stylesheet" type="text/css" />
+<link href="{% static 'style.css' %}" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="menu-wrapper">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="/">Home</a></li>
+			<li><a href="/exp">Experience</a></li>
+			<li><a href="/certi">Certifications</a></li>
+			<li><a href="/project">Projects</a></li>
+			<li><a href="/contact">Contact</a></li>
+		</ul>
+	</div>
+	<!-- end #menu --> 
+</div>
+<div id="header-wrapper">
+	<div id="header">
+		<div id="name">
+			<h1>Rutvi Patel</h1>
+		</div>
+	</div>
+</div>
+<div id="wrapper"> 
+	<!-- end #header -->
+	<div id="page-bgtop"></div>
+	<div id="page">
+		<div><img src="{% static 'images/img.png' %}" width="920" height="300" alt="" /></div>
+		<div id="content">
+			<div class="post">
+            	<div class="entry">
+
+{% block content %}
+
+{% endblock %}
+</div>
+			</div>
+			
+			<div style="clear: both;">&nbsp;</div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+			<ul>
+				
+				<li>
+					<h2>Education</h2>
+					<ul>
+						<li>BE: Silver Oak College of Engg. & Tech. <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2018-2022  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp aggregate: 8.65 CGPA </li>
+						<li>HSC: Sheth C.N. Vidhyalaya <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2018  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp aggregate: 67% </li>
+						<li>SSC: Sheth C.N. Vidhyalaya <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2016  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp aggregate: 86% </li>
+					</ul>
+				</li>
+				<li>
+					<h2>Technical Skills</h2>
+					<ul>
+						<li>Language: C, Python, Core Java</li>
+						<li>Web-technologies: HTML, CSS, JavaScript</li>
+						<li>Frameworks: Bootstrap4, Django</li>
+						<li>Tools: MS-office, Adobe Photoshop</li>
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<div id="page-bgbtm"></div>
+	<!-- end #page --> 
+</div>
+<div id="footer">
+	<p>designed by Rutvi Patel.</p>
+</div>
+
+
+
+</body>
+</html>
